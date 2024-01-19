@@ -95,11 +95,12 @@ export default {
             Are you interested in immigrating, or are you just a creative
             looking to collaborate? Get in touch with us.
           </p>
-          <button
+          <a
             class="bg-sky-400 hover:bg-sky-500 text-white px-10 py-6 rounded-full text-sm mt-8 font-bold w-full md:w-2/5"
+            href="#supportSection"
           >
-            Free Consultation
-          </button>
+            <button>Free Consultation</button></a
+          >
         </div>
       </div>
     </div>
