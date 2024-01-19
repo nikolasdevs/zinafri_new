@@ -1,12 +1,12 @@
 <script setup>
-import HeroSection from "../../components/Sections/HeroSection.vue";
-import ServiceSection from "../../components/Sections/ServiceSection.vue";
-import AboutUsSection from "../../components/Sections/AboutUsSection.vue";
-import FeedbackSection from "../../components/Sections/FeedbackSection.vue";
-import SubscribeSection from "../../components/Sections/SubscribeSection.vue";
-import BlogSection from "../../components/Sections/BlogSection.vue";
-import SupportSection from "../../components/Sections/SupportSection.vue";
-import TheFooter from "../../components/Sections/TheFooter.vue";
+import HeroSection from "../../components/sections/HeroSection.vue";
+import ServiceSection from "../../components/sections/ServiceSection.vue";
+import AboutUsSection from "../../components/sections/AboutUsSection.vue";
+import FeedbackSection from "../../components/sections/FeedbackSection.vue";
+import SubscribeSection from "../../components/sections/SubscribeSection.vue";
+import BlogSection from "../../components/sections/BlogSection.vue";
+import SupportSection from "../../components/sections/SupportSection.vue";
+import TheFooter from "../../components/sections/TheFooter.vue";
 </script>
 
 <template>
