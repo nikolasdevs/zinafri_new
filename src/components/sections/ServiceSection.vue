@@ -5,6 +5,24 @@ export default {
   components: {
     ServiceCard,
   },
+
+  mounted() {
+    this.addSmoothScrolling();
+  },
+  methods: {
+    addSmoothScrolling() {
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    },
+  },
+
   data() {
     return {
       cardData: [
@@ -96,8 +114,8 @@ export default {
             looking to collaborate? Get in touch with us.
           </p>
           <a
-            class="bg-sky-400 hover:bg-sky-500 text-white px-10 py-6 rounded-full text-sm mt-8 font-bold w-full md:w-2/5"
             href="#supportSection"
+            class="bg-sky-400 hover:bg-sky-500 text-white px-10 py-6 rounded-full text-sm mt-8 font-bold w-full md:w-2/5"
           >
             <button>Free Consultation</button></a
           >

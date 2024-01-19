@@ -75,7 +75,10 @@ export default {
         </transition>
 
         <div class="w-8 md:w-20 flex items-center justify-center">
-          <a href=""><img src="/src/assets/images/logo.png" alt="logo" /></a>
+          <router-link :to="{ name: 'Home' }"
+            ><img src="/src/assets/images/logo.png" alt="logo"
+          /></router-link>
+          <!-- <a href=""></a> -->
         </div>
 
         <div class="hidden md:flex gap-10" id="nav">
