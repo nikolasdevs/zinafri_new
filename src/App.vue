@@ -1,85 +1,107 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+<script>
+export default {
+  data() {
+    return {
+      isMenuOpen: false,
+      // isMenuClose: false,
+    };
+  },
+  methods: {
+    toggleMenu() {
+      this.isMenuOpen = !this.isMenuOpen;
+    },
+  },
+};
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <div
+      class="text-sky-400 p-4 shadow-md fixed w-full z-50 bg-white bg-opacity-95"
+    >
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="md:hidden flex cursor-pointer" @click="toggleMenu">
+          <span v-if="isMenuOpen"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="w-6 h-6 text-red-400"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
+          </span>
+          <span v-else>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </span>
+        </div>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+        <transition class="md:hidden flex cursor-pointer" name="slide">
+          <div class="menu menu-open" v-if="isMenuOpen">
+            <div class="flex flex-col gap-8 ps-6">
+              <router-link :to="{ name: 'Home' }" class="hover:text-sky-500"
+                >HOME</router-link
+              >
+              <router-link :to="{ name: 'Service' }" class="hover:text-sky-500"
+                >SERVICES</router-link
+              >
+              <router-link :to="{ name: 'News' }" class="hover:text-sky-500"
+                >NEWS</router-link
+              >
+              <router-link :to="{ name: 'Contact' }" class="hover:text-sky-500"
+                >CONTACT</router-link
+              >
+            </div>
+          </div>
+        </transition>
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+        <div class="w-8 md:w-20 flex items-center justify-center">
+          <a href=""><img src="/src/assets/images/logo.png" alt="logo" /></a>
+        </div>
+
+        <div class="hidden md:flex gap-10" id="nav">
+          <router-link :to="{ name: 'Home' }">HOME</router-link>
+          <router-link :to="{ name: 'Service' }">SERVICES</router-link>
+          <router-link :to="{ name: 'News' }">NEWS</router-link>
+          <router-link :to="{ name: 'Contact' }">CONTACT</router-link>
+        </div>
+
+        <div class="flex gap-4">
+          <a class="font-semibold" href="#">TRAVEL BLOG</a>
+        </div>
+      </div>
     </div>
+    <router-view />
   </header>
-
-  <RouterView />
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
+.slide-enter-active,
+.slide-leave-active {
+  transform: translateX(-100%);
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+.slide-enter,
+.slide-leave-to {
+  transform: translateX(-100%);
 }
 </style>
