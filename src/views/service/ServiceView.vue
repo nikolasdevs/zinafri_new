@@ -569,12 +569,14 @@
       </div>
     </div>
 
-    <div class="bg-primary h-48 w-full flex items-center justify-center mt-40">
+    <div
+      class="bg-primary h-48 w-screen flex items-center justify-center mt-40"
+    >
       <button
         class="p-4 bg-sky-400 hover:bg-sky-500 font-semibold text-white text-sm tracking-wide rounded-md"
         type="submit"
       >
-        SEND REQUEST
+        Free Consultation
       </button>
     </div>
   </div>
