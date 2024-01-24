@@ -3,7 +3,6 @@ export default {
   data() {
     return {
       isMenuOpen: false,
-      // isMenuClose: false,
     };
   },
   methods: {
