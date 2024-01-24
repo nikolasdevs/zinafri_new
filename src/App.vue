@@ -1,4 +1,6 @@
 <script>
+import FooterSection from "./components/sections/FooterSection.vue";
+
 export default {
   data() {
     return {
@@ -10,6 +12,7 @@ export default {
       this.isMenuOpen = !this.isMenuOpen;
     },
   },
+  components: { FooterSection },
 };
 </script>
 
@@ -94,6 +97,7 @@ export default {
     </div>
     <router-view />
   </header>
+  <FooterSection />
 </template>
 
 <style scoped>
