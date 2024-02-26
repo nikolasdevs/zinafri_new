@@ -1,16 +1,31 @@
 <script setup></script>
 
 <template>
+  <div class="top-24 relative">
+    <div class="bg-slate-900 opacity-75 absolute top-0 left-0 right-0 bottom-0">
+      <div class="flex items-center justify-center h-full">
+        <p
+          class="text-white font-bold text-6xl text-secondary leading-snug w-2/4"
+        >
+          Navigate Your Immigration Journey With Our Solutions
+        </p>
+      </div>
+    </div>
+    <div>
+      <img
+        src="/src/assets/images/glenn-carstens-peters-ZWD3Dx6aUJg-unsplash.jpg"
+        alt=""
+      />
+    </div>
+
+    <!--  -->
+  </div>
+
   <div
     class="service flex items-center justify-center max-w-4xl mx-auto"
     id="serviceView"
   >
     <div class="mt-32">
-      <div class="service-header w-3/4 mx-auto pb-6">
-        <p class="text-center font-bold text-4xl text-secondary leading-snug">
-          Navigate Your Immigration Journey With Our Solutions
-        </p>
-      </div>
       <div id="quota" class="service-view">
         <div class="service-img">
           <img src="../../assets/images/startup.svg" alt="" />
@@ -574,15 +589,20 @@
       </div>
     </div>
 
-    <div
-      class="bg-primary h-48 w-screen flex items-center justify-center mt-40"
-    >
+    <div class="w-screen mt-32 flex items-center justify-center flex-col">
       <button
         class="p-4 bg-sky-400 hover:bg-sky-500 font-semibold text-white text-sm tracking-wide rounded-md"
         type="submit"
       >
         Free Consultation
       </button>
+
+      <img
+        class="rotate-180 mt-8"
+        src="/src/assets/images/wave (2).svg"
+        alt=""
+      />
+      <!--  -->
     </div>
   </div>
 </template>
