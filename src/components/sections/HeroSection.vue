@@ -31,39 +31,72 @@
       <div
         class="w-full mt-10 inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]"
       >
-        <ul
-          class="contrast-0 animate-infinite-scroll overflow-x-scroll no-scrollbar flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none"
-        >
-          <li>
-            <img
-              class="w-32 h-16 opacity-80 max-w-none"
-              src="/src/assets/images/nokia_logo.svg.svg"
-              alt=""
-            />
-          </li>
-          <li>
-            <img
-              class="w-32 h-16 opacity-80"
-              src="/src/assets/images/kyosk_logo.png.png"
-              alt=""
-            />
-          </li>
-          <li>
-            <img
-              class="w-32 h-16 opacity-80"
-              src="/src/assets/images/airtel_nigeria_logo.svg.svg"
-              alt=""
-            />
-          </li>
-          <li>
-            <img
-              class="w-32 h-16 opacity-80"
-              src="/src/assets/images/petroapp___logo.svg.svg"
-              alt=""
-            />
-          </li>
-        </ul>
-       
+        <div class="flex">
+          <ul
+            class="contrast-0 animate-infinite-scroll overflow-x-scroll no-scrollbar flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none"
+          >
+            <li class="">
+              <img
+                class="w-20 h-16 opacity-80 max-w-none"
+                src="/src/assets/images/nokia_logo.svg.svg"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                class="w-20 h-8 opacity-80"
+                src="/src/assets/images/kyosk_logo.png.png"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                class="w-20 h-12 opacity-80"
+                src="/src/assets/images/airtel_nigeria_logo.svg.svg"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                class="w-32 h-16 opacity-80"
+                src="/src/assets/images/petroapp___logo.svg.svg"
+                alt=""
+              />
+            </li>
+          </ul>
+          <ul
+            class="contrast-0 animate-infinite-scroll overflow-x-scroll no-scrollbar flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none"
+          >
+            <li>
+              <img
+                class="w-20 h-16 opacity-80 max-w-none"
+                src="/src/assets/images/nokia_logo.svg.svg"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                class="w-20 h-8 opacity-80"
+                src="/src/assets/images/kyosk_logo.png.png"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                class="w-20 h-12 opacity-80"
+                src="/src/assets/images/airtel_nigeria_logo.svg.svg"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                class="w-32 h-16 opacity-80"
+                src="/src/assets/images/petroapp___logo.svg.svg"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
