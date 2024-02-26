@@ -5,7 +5,12 @@
     class="service flex items-center justify-center max-w-4xl mx-auto"
     id="serviceView"
   >
-    <div class="mt-48">
+    <div class="mt-32">
+      <div class="service-header w-3/4 mx-auto pb-6">
+        <p class="text-center font-bold text-4xl text-secondary leading-snug">
+          Navigate Your Immigration Journey With Our Solutions
+        </p>
+      </div>
       <div id="quota" class="service-view">
         <div class="service-img">
           <img src="../../assets/images/startup.svg" alt="" />
