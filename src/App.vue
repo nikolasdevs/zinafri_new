@@ -11,6 +11,14 @@ export default {
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
     },
+    scrollToFooter() {
+      document
+        .getElementById("footerSection")
+        .scrollIntoView({ behavior: "smooth" });
+    },
+    scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    },
   },
   components: { FooterSection },
 };
@@ -20,6 +28,7 @@ export default {
   <header>
     <div
       class="text-sky-400 p-4 shadow-md fixed w-full z-50 bg-white bg-opacity-95"
+      id="headerSection"
     >
       <div class="container mx-auto flex justify-between items-center">
         <div class="md:hidden flex cursor-pointer" @click="toggleMenu">
@@ -69,9 +78,6 @@ export default {
               <router-link :to="{ name: 'News' }" class="hover:text-sky-500"
                 >NEWS</router-link
               >
-              <router-link :to="{ name: 'Contact' }" class="hover:text-sky-500"
-                >CONTACT</router-link
-              >
             </div>
           </div>
         </transition>
@@ -84,10 +90,12 @@ export default {
         </div>
 
         <div class="hidden md:flex gap-10" id="nav">
-          <router-link :to="{ name: 'Home' }">HOME</router-link>
+          <router-link :to="{ name: 'Home' }" @click.native="scrollToTop"
+            >HOME</router-link
+          >
           <router-link :to="{ name: 'Service' }">SERVICES</router-link>
           <router-link :to="{ name: 'News' }">NEWS</router-link>
-          <router-link :to="{ name: 'Contact' }">CONTACT</router-link>
+          <a @click.native="scrollToFooter" href="#footerSection">FOOTER</a>
         </div>
 
         <div class="flex gap-4">
