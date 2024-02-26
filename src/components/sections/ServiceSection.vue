@@ -72,7 +72,7 @@ export default {
 <template>
   <div class="service flex items-center justify-center max-w-4xl mx-auto">
     <div
-      class="container flex flex-col md:mt-24 mt-16 items-center justify-center px-4"
+      class="container flex flex-col md:mt-10 mt-16 items-center justify-center px-4"
     >
       <div>
         <p class="text-header">What we do</p>
