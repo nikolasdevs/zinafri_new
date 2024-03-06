@@ -1,6 +1,6 @@
 <template>
   <div
-    class="hero bg-hero-section bg-cover bg-center relative flex h-screen bg-fixed"
+    class="hero bg-hero-section bg-cover bg-center relative flex bg-fixed h-screen "
   >
     <div
       class="bg-gray-900 bg-opacity-70 absolute left-0 right-0 top-0 bottom-0"
@@ -9,7 +9,7 @@
       class="container mx-auto flex md:px-0 items-center justify-center md:justify-start z-40 px-4"
     >
       <div
-        class="flex text-center md:text-start flex-col gap-6 w-full xl:w-3/6 text-gray-800"
+        class=" justify-center flex text-center md:text-start flex-col gap-6 w-full xl:w-3/6 text-gray-800"
       >
         <p class="text-xl font-medium text-white">
           We have 15+ years experience in

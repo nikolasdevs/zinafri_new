@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/home/HomeView.vue";
 import ServiceView from "../views/service/ServiceView.vue";
-import NewsView from "../views/news/NewsView.vue";
+
 // import SupportSection from "../views/home/Sections/SupportSection.vue";
 
 const routes = [
@@ -16,19 +16,6 @@ const routes = [
     // component: () => import("../components/Views/Service/ServiceView.vue"),
     component: ServiceView,
   },
-  {
-    path: "/news",
-    name: "News",
-    // component: () => import("../components/Views/Service/ServiceView.vue"),
-    component: NewsView,
-  },
-  
-  // {
-  //   path: "/support",
-  //   name: "Support",
-  //   // component: () => import("../components/Views/Service/ServiceView.vue"),
-  //   component: SupportSection,
-  // },
 ];
 
 const router = createRouter({

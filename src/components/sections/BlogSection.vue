@@ -56,9 +56,7 @@ export default {
         luctus placerat and massa
       </p>
     </div>
-    <div
-      class="flex flex-col md:flex-row mt-16 gap-3"
-    >
+    <div class="flex flex-col md:flex-row mt-16 gap-3">
       <div
         v-for="(blog, index) in blogData"
         :key="index"

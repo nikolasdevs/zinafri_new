@@ -5,21 +5,53 @@ export default {
   data() {
     return {
       isMenuOpen: false,
+      headerBgColor: "transparent",
+      position: "absolute",
+      lastPosition: 0,
     };
   },
+
   methods: {
+    ////////////////////// SCROLL EVENT  /////////////////////////////////
+
+    handleScroll() {
+      let currentPosition = window.scrollY;
+      if (currentPosition > this.lastPosition) {
+        this.headerBgColor = "white";
+        this.position = "fixed";
+      } else {
+        this.headerBgColor = "transparent";
+      }
+    },
+
+    ////////////////////// TOGGLE THE MENU  /////////////////////////////////
+
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
     },
+
     scrollToFooter() {
       document
         .getElementById("footerSection")
         .scrollIntoView({ behavior: "smooth" });
     },
     scrollToTop() {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+        scrollLeft: 0,
+        scrollTop: 0,
+      });
     },
   },
+
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
+
   components: { FooterSection },
 };
 </script>
@@ -27,8 +59,9 @@ export default {
 <template>
   <header>
     <div
-      class="text-sky-400 p-4 shadow-md fixed w-full z-50 bg-white bg-opacity-95"
+      class="text-sky-400 p-4 sticky shadow-md top-0 w-full z-50"
       id="headerSection"
+      :style="{ backgroundColor: headerBgColor, position: position }"
     >
       <div class="container mx-auto flex justify-between items-center">
         <div class="md:hidden flex cursor-pointer" @click="toggleMenu">
@@ -69,14 +102,15 @@ export default {
         <transition class="md:hidden flex cursor-pointer" name="slide">
           <div class="menu menu-open" v-if="isMenuOpen">
             <div class="flex flex-col gap-8 ps-6">
-              <router-link :to="{ name: 'Home' }" class="hover:text-sky-500"
+              <router-link
+                :to="{ name: 'Home' }"
+                class="hover:text-sky-500 font-semibold"
                 >HOME</router-link
               >
-              <router-link :to="{ name: 'Service' }" class="hover:text-sky-500"
+              <router-link
+                :to="{ name: 'Service' }"
+                class="hover:text-sky-500 font-semibold"
                 >SERVICES</router-link
-              >
-              <router-link :to="{ name: 'News' }" class="hover:text-sky-500"
-                >NEWS</router-link
               >
             </div>
           </div>
@@ -90,12 +124,23 @@ export default {
         </div>
 
         <div class="hidden md:flex gap-10" id="nav">
-          <router-link :to="{ name: 'Home' }" @click.native="scrollToTop"
+          <router-link
+            :to="{ name: 'Home' }"
+            @click.native="scrollToTop"
+            class="font-semibold after relative"
             >HOME</router-link
           >
-          <router-link :to="{ name: 'Service' }">SERVICES</router-link>
-          <router-link :to="{ name: 'News' }">NEWS</router-link>
-          <a @click.native="scrollToFooter" href="#footerSection">FOOTER</a>
+          <router-link
+            :to="{ name: 'Service' }"
+            class="font-semibold after relative"
+            >SERVICES</router-link
+          >
+          <a
+            class="font-semibold after relative"
+            @click.native="scrollToFooter"
+            href="#footerSection"
+            >CONTACT</a
+          >
         </div>
 
         <div class="flex gap-4">
@@ -117,5 +162,9 @@ export default {
 .slide-enter,
 .slide-leave-to {
   transform: translateX(-100%);
+}
+
+header {
+  transition: background-color 0.3s ease;
 }
 </style>
