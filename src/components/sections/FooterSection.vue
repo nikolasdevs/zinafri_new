@@ -28,12 +28,14 @@
           </div>
           <div class="contact-column-address">
             <p class="text-secondary-200">
-              121 King Street, Melbourne, Victoria 3000 Australia
+              Lekki-Ajah Expressway, Lagos, Nigeria
             </p>
           </div>
           <div class="contact-column-email">
-            <p class="text-secondary-200">Phone: +12 9 8765 4321</p>
-            <p class="text-secondary-200">Email: <span>hello@demo.com</span></p>
+            <p class="text-secondary-200">Phone: +234 703 8230 351</p>
+            <p class="text-secondary-200">
+              Email: <span>immanuel@zinafri.com</span>
+            </p>
           </div>
           <div class="contact-column-workdays">
             <p class="text-secondary-200">

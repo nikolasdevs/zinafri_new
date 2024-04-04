@@ -1,10 +1,7 @@
-<script setup>
+<script></script>
 
-
-</script>
-
-<template>
-  <div class="top-24 relative">
+<template id="serviceViews">
+  <div class="relative">
     <div class="bg-slate-900 opacity-75 absolute top-0 left-0 right-0 bottom-0">
       <div class="flex items-center justify-center h-full">
         <p
@@ -29,12 +26,13 @@
     id="serviceView"
   >
     <div class="mt-32">
-      <div id="quota" class="service-view">
+      <div id="quota" class="service-view mb-24">
         <div class="service-img">
           <img src="../../assets/images/startup.svg" alt="" />
         </div>
         <div class="w-1/2">
           <h1 class="text-title">Quota Management</h1>
+
           <p class="mb-6 w-5/6">
             Quota management typically refers to the regulation and control of
             the number of foreign nationals allowed to enter, work, or reside in
@@ -136,7 +134,7 @@
           </div>
         </div>
       </div>
-      <div id="work" class="service-view">
+      <div id="work" class="service-view py-24">
         <div class="w-1/2">
           <h1 class="text-title">Work Authorization</h1>
           <p class="mb-6">
@@ -291,7 +289,7 @@
           <img src="../../assets/images/work.svg" alt="" />
         </div>
       </div>
-      <div id="business" class="service-view">
+      <div id="business" class="service-view py-24">
         <div class="service-img">
           <img src="../../assets/images/business.svg" alt="" />
         </div>
@@ -361,7 +359,7 @@
           </div>
         </div>
       </div>
-      <div id="audit" class="service-view">
+      <div id="audit" class="service-view py-24">
         <div class="w-1/2">
           <h1 class="text-title">Immigration Audit</h1>
           <p class="mb-6">
@@ -431,7 +429,7 @@
           <img src="../../assets/images/business-two.svg" alt="" />
         </div>
       </div>
-      <div id="training" class="service-view">
+      <div id="training" class="service-view py-24">
         <div class="service-img">
           <img src="../../assets/images/training.svg" alt="" />
         </div>
@@ -501,7 +499,7 @@
           </div>
         </div>
       </div>
-      <div id="consulting" class="service-view">
+      <div id="consulting" class="service-view py-24">
         <div class="w-1/2">
           <h1 class="text-title">consulting</h1>
           <p class="mb-6">
@@ -601,7 +599,7 @@
       </button>
 
       <img
-        class="rotate-180 mt-8"
+        class="rotate-180 mt-16"
         src="/src/assets/images/wave (2).svg"
         alt=""
       />
@@ -620,4 +618,3 @@
   }
 }
 </style>
-pull

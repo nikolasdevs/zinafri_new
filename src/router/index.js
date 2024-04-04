@@ -16,6 +16,7 @@ const routes = [
     // component: () => import("../components/Views/Service/ServiceView.vue"),
     component: ServiceView,
   },
+  //{ path: "/service/:id", name: "ServiceView", component: ServiceView },
 ];
 
 const router = createRouter({
