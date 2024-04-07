@@ -28,6 +28,7 @@ export default {
 
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
+      //close menu after clicking the link
     },
 
     scrollToFooter() {
@@ -72,7 +73,7 @@ export default {
               viewBox="0 0 24 24"
               stroke-width="2"
               stroke="currentColor"
-              class="w-6 h-6 text-red-400"
+              class="w-6 h-6 text-red-500"
             >
               <path
                 stroke-linecap="round"
@@ -100,17 +101,44 @@ export default {
         </div>
 
         <transition class="md:hidden flex cursor-pointer" name="slide">
-          <div class="menu menu-open" v-if="isMenuOpen">
-            <div class="flex flex-col gap-8 ps-6">
+          <div
+            class="menu menu-open rounded-full h-64 items-center justify-center opacity-95 ms-4"
+            v-if="isMenuOpen"
+          >
+            <div class="flex flex-col gap-8 items-center">
               <router-link
                 :to="{ name: 'Home' }"
                 class="hover:text-sky-500 font-semibold"
+                @click.native="
+                  () => {
+                    toggleMenu();
+                    scrollToTop();
+                  }
+                "
                 >HOME</router-link
               >
               <router-link
                 :to="{ name: 'Service' }"
                 class="hover:text-sky-500 font-semibold"
+                @click.native="
+                  () => {
+                    toggleMenu();
+                    scrollToTop();
+                  }
+                "
                 >SERVICES</router-link
+              >
+              <a
+                :to="{ name: 'Contact' }"
+                class="hover:text-sky-500 font-semibold"
+                @click.native="
+                  () => {
+                    toggleMenu();
+                    scrollToFooter();
+                  }
+                "
+                href="#footerSection"
+                >CONTACT</a
               >
             </div>
           </div>
