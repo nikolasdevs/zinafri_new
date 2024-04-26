@@ -1,6 +1,7 @@
 <script>
 import FooterSection from "./components/sections/FooterSection.vue";
 
+
 export default {
   data() {
     return {
