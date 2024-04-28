@@ -16,8 +16,8 @@
           </div>
           <div class="logo-column-text">
             <p class="text-secondary-200">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-              dolor ducimus sit dolorum odit deleniti cum est, harum fuga porro.
+              At Zinafri, we make your business in Nigeria a very seamless one
+              that makes it easy to create a new business in the country.
             </p>
           </div>
         </div>
@@ -97,7 +97,7 @@
       </div>
 
       <hr />
-      <div class="footer-brand my-8">
+      <div class="footer-brand my-8 text-center">
         <p class="text-secondary-200 text-xs">
           © Copyright <span class="font-medium">NikolasDevs 2024.</span> All
           Rights Reserved
