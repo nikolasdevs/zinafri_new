@@ -62,7 +62,10 @@ export default {
         v-for="(blog, index) in blogData"
         :key="index"
         class="w-full hover:shadow-md"
-      >
+      >    
+      
+      <!-- Blog Card Component -->
+      
         <BlogCard
           :blogCardImage="blog.blogImageUrl"
           :blogCategory="blog.blogCategory"
@@ -72,18 +75,10 @@ export default {
           :blogAuthor="blog.blogAuthor"
           :blogDate="blog.blogDate"
         >
-          <!-- Blog Card Component -->
+      
         </BlogCard>
       </div>
     </div>
   </div>
 </template>
 
-<!-- Photo by <a href="https://unsplash.com/@convertkit?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">ConvertKit</a> on <a href="https://unsplash.com/photos/white-and-red-labeled-box-htQznS-Rx7w?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
-
-<!-- 
-Photo by <a href="https://unsplash.com/@agusdietrich?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Agus Dietrich</a> on <a href="https://unsplash.com/photos/person-holding-passport-eUjufrdx_bM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-   -->
-
-<!-- Photo by <a href="https://unsplash.com/@mantashesthaven?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mantas Hesthaven</a> on <a href="https://unsplash.com/photos/man-holding-luggage-photo-_g1WdcKcV3w?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-   -->
