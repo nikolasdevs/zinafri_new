@@ -24,6 +24,7 @@ export default {
   props: {
     blogCardImage: {
       type: String,
+      
       required: true,
     },
     blogCategory: {
