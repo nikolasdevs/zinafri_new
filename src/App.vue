@@ -1,7 +1,6 @@
 <script>
 import FooterSection from "./components/sections/FooterSection.vue";
 
-
 export default {
   data() {
     return {
@@ -65,7 +64,7 @@ export default {
       id="headerSection"
       :style="{ backgroundColor: headerBgColor, position: position }"
     >
-      <div class="container mx-auto flex justify-between items-center">
+      <div class="container mx-auto flex flex-col justify-between items-start">
         <div class="md:hidden flex cursor-pointer" @click="toggleMenu">
           <span v-if="isMenuOpen"
             ><svg
@@ -141,11 +140,23 @@ export default {
                 href="#footerSection"
                 >CONTACT</a
               >
+              <a
+                :to="{ name: 'Contact' }"
+                class="hover:text-sky-500 font-semibold"
+                @click.native="
+                  () => {
+                    toggleMenu();
+                    scrollToFooter();
+                  }
+                "
+                href="#footerSection"
+                >TRAVEL BLOG</a
+              >
             </div>
           </div>
         </transition>
 
-        <div class="w-8 md:w-20 flex items-center justify-center">
+        <div class="w-8 md:w-20 md:flex hidden items-center justify-center">
           <router-link :to="{ name: 'Home' }"
             ><img src="/src/assets/images/logo.png" alt="logo"
           /></router-link>
@@ -172,7 +183,7 @@ export default {
           >
         </div>
 
-        <div class="flex gap-4">
+        <div class="gap-4 hidden md:flex">
           <a class="font-semibold" href="#">TRAVEL BLOG</a>
         </div>
       </div>
