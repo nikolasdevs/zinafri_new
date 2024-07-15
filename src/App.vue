@@ -64,7 +64,9 @@ export default {
       id="headerSection"
       :style="{ backgroundColor: headerBgColor, position: position }"
     >
-      <div class="container mx-auto flex flex-col justify-between items-start">
+      <div
+        class="container mx-auto flex md:flex-row flex-col md:items-center justify-between items-start"
+      >
         <div class="md:hidden flex cursor-pointer" @click="toggleMenu">
           <span v-if="isMenuOpen"
             ><svg
