@@ -10,7 +10,7 @@
       />
     </div>
 
-    <div class="flex flex-col gap-2 md:w-2/4 w-full md:text-start">
+    <div class="flex flex-col gap-2 md:w-2/4 w-full md:text-start text-secondary-200">
       <p class="text-3xl text-sky-500 font-semibold md:text-header">
         Immigration services from experienced consultants
       </p>

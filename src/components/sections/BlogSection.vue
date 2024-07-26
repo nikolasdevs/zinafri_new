@@ -49,7 +49,7 @@ export default {
     class="blog container mx-auto flex flex-wrap items-center justify-center md:mt-24 mt-16"
   >
     <div class="flex flex-col gap-4 items-center md:w-4/6 px-4">
-      <p class="text-header text-center">Our Stories & Latest News</p>
+      <p class="text-header text-center text-[2rem] font-semibold text-secondary-300 ">Our Stories & Latest News</p>
       <p class="text-base text-center text-secondary-200">
         In today's fast-paced world, staying informed about the latest news and
         updates in Nigeria immigration is essential. Our News and Updates

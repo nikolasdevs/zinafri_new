@@ -33,7 +33,7 @@ export default {
 
 <template>
   <div
-    class="card-container cursor-pointer shadow rounded-lg py-2 px-2 md:w-72 w-80  hover:bg-gray-50 bg"
+    class="card-container cursor-pointer shadow border rounded-lg py-2 px-2 md:w-72 w-80  hover:bg-gray-50 bg"
   >
     <div class="card" :class="{ flipped: isFlipped }">
       <div

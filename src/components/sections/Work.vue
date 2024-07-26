@@ -3,9 +3,12 @@
     id="work"
     class="service-view flex flex-col md:flex-row items-center justify-between mx-auto md:mt-32 mt-16 w-full md:gap-24 gap-8 px-auto"
   >
+     <div class="md:service-img w-3/4 md:w-1/3 md:hidden">
+      <img src="../../assets/images/work.svg" alt="" />
+    </div>
     <div class="md:w-1/2 px-8">
-      <h1 class="text-title">Work Authorization</h1>
-      <p class="mb-6">
+      <h1 class="text-title text-[2rem] font-semibold mb-4 text-secondary-300">Work Authorization</h1>
+      <p class="mb-6 text-secondary-200">
         In Nigeria, a work permit is a legal document or authorization that
         allows foreign nationals to legally work and reside in the country for a
         specific period. It is a mandatory requirement for foreign nationals who
@@ -13,148 +16,48 @@
         authorization services include:
       </p>
       <div class="service-list">
-        <ul class="flex flex-col gap-4">
-          <li>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m4.5 12.75 6 6 9-13.5"
-              />
-            </svg>
+        <ul class="flex flex-col gap-4 text-secondary-200">
+         <li class="flex gap-4 items-center">
+            <PhCheck />
             Processing business visas
           </li>
-          <li>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m4.5 12.75 6 6 9-13.5"
-              />
-            </svg>
+        <li class="flex gap-4 items-center">
+            <PhCheck />
             Processing Temporary Work permits
           </li>
-          <li>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m4.5 12.75 6 6 9-13.5"
-              />
-            </svg>
+         <li class="flex gap-4 items-center">
+            <PhCheck />
             Filing of monthly quota returns
           </li>
-          <li>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m4.5 12.75 6 6 9-13.5"
-              />
-            </svg>
+         <li class="flex gap-4 items-center">
+            <PhCheck />
             Processing of Subject to Regularization (STR) Visa
           </li>
-          <li>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m4.5 12.75 6 6 9-13.5"
-              />
-            </svg>
+        <li class="flex gap-4 items-center">
+            <PhCheck />
             Change of employment
           </li>
-          <li>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m4.5 12.75 6 6 9-13.5"
-              />
-            </svg>
+      <li class="flex gap-4 items-center">
+            <PhCheck />
             Change of Position
           </li>
-          <li>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m4.5 12.75 6 6 9-13.5"
-              />
-            </svg>
+     <li class="flex gap-4 items-center">
+            <PhCheck />
             Processing and Renewal of Residence Permit
           </li>
-          <li>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="m4.5 12.75 6 6 9-13.5"
-              />
-            </svg>
+       <li class="flex gap-4 items-center">
+            <PhCheck />
             Extension of stay on TWP visa
           </li>
         </ul>
       </div>
     </div>
-    <div class="md:service-img w-3/4 md:w-1/2">
+    <div class="md:service-img w-3/4 md:w-1/3 hidden md:block">
       <img src="../../assets/images/work.svg" alt="" />
     </div>
   </div>
 </template>
+
+<script lang="js" setup>
+import {PhCheck} from "@phosphor-icons/vue";
+</script>

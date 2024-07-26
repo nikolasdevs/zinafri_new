@@ -14,46 +14,46 @@ export default {
       feedData: [
         {
           imageUrl: profileImage1,
-          name: "John Doe",
-          request: "(Business Visa)",
+          name: "John Davids",
+          request: "(Work Permit)",
           content:
             "Zinafri provides Immigration consulting  which involves providing guidance, advice, and assistance to individuals, families, businesses, or organizations  Our team comprises experienced immigration consultants dedicated to providing personalized guidance tailored to your specific needs.",
         },
         {
           imageUrl: profileImage2,
-          name: "John Doe",
+          name: "Charles",
           request: "(Business Visa)",
           content:
             "Zinafri provides Immigration consulting  which involves providing guidance, advice, and assistance to individuals, families, businesses, or organizations  Our team comprises experienced immigration consultants dedicated to providing personalized guidance tailored to your specific needs.",
         },
         {
           imageUrl: profileImage3,
-          name: "John Doe",
-          request: "(Business Visa)",
+          name: "Sameer L",
+          request: "(STR Visa)",
           content:
             "Zinafri provides Immigration consulting  which involves providing guidance, advice, and assistance to individuals, families, businesses, or organizations  Our team comprises experienced immigration consultants dedicated to providing personalized guidance tailored to your specific needs.",
         },
-        {
-          imageUrl: profileImage4,
-          name: "John Doe",
-          request: "(Business Visa)",
-          content:
-            "Zinafri provides Immigration consulting  which involves providing guidance, advice, and assistance to individuals, families, businesses, or organizations  Our team comprises experienced immigration consultants dedicated to providing personalized guidance tailored to your specific needs.",
-        },
-        {
-          imageUrl: profileImage3,
-          name: "John Doe",
-          request: "(Business Visa)",
-          content:
-            "Zinafri provides Immigration consulting  which involves providing guidance, advice, and assistance to individuals, families, businesses, or organizations  Our team comprises experienced immigration consultants dedicated to providing personalized guidance tailored to your specific needs.",
-        },
-        {
-          imageUrl: profileImage4,
-          name: "John Doe",
-          request: "(Business Visa)",
-          content:
-            "Zinafri provides Immigration consulting  which involves providing guidance, advice, and assistance to individuals, families, businesses, or organizations  Our team comprises experienced immigration consultants dedicated to providing personalized guidance tailored to your specific needs.",
-        },
+        // {
+        //   imageUrl: profileImage4,
+        //   name: "John Doe",
+        //   request: "(Business Visa)",
+        //   content:
+        //     "Zinafri provides Immigration consulting  which involves providing guidance, advice, and assistance to individuals, families, businesses, or organizations  Our team comprises experienced immigration consultants dedicated to providing personalized guidance tailored to your specific needs.",
+        // },
+        // {
+        //   imageUrl: profileImage3,
+        //   name: "John Doe",
+        //   request: "(Business Visa)",
+        //   content:
+        //     "Zinafri provides Immigration consulting  which involves providing guidance, advice, and assistance to individuals, families, businesses, or organizations  Our team comprises experienced immigration consultants dedicated to providing personalized guidance tailored to your specific needs.",
+        // },
+        // {
+        //   imageUrl: profileImage4,
+        //   name: "John Doe",
+        //   request: "(Business Visa)",
+        //   content:
+        //     "Zinafri provides Immigration consulting  which involves providing guidance, advice, and assistance to individuals, families, businesses, or organizations  Our team comprises experienced immigration consultants dedicated to providing personalized guidance tailored to your specific needs.",
+        // },
       ],
     };
   },
@@ -64,7 +64,7 @@ export default {
   <div class="feedback">
     <div class="container mx-auto md:mt-24 mt-16 px-4">
       <div class="flex flex-col items-center md:w-4/5 mx-auto">
-        <p class="text-center text-3xl text-header">What Our Clients Say</p>
+        <p class="text-center text-secondary-200 font-semibold text-[2rem] text-header">What Our Clients Say</p>
         <p class="mt-8 font-normal text-lg text-center text-secondary-200">
           At Zinafri, we take immense pride in our commitment to providing
           exceptional professional service and fostering strong relationships

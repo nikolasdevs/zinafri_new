@@ -1,9 +1,9 @@
 <template>
   <div
-    class="hero bg-hero-section bg-cover bg-center relative flex bg-fixed h-screen "
+    class="hero bg-hero-section bg-cover bg-center relative flex bg-fixed h-screen px-4 "
   >
     <div
-      class="bg-gray-900 bg-opacity-70 absolute left-0 right-0 top-0 bottom-0"
+      class=" bg-gray-900 bg-opacity-80 absolute left-0 right-0 top-0 bottom-0"
     ></div>
     <div
       class="container mx-auto flex md:px-0 items-center justify-center md:justify-start z-40 px-4"
@@ -19,7 +19,7 @@
           IMMIGRATION SERVICES & VISA CONSULTATION
         </p>
 
-        <p class="text-xl font-medium text-white">
+        <p class="text-md text-white font-normal">
           Our team comprises experienced immigration consultants dedicated to
           providing personalized guidance tailored to your specific needs.
         </p>

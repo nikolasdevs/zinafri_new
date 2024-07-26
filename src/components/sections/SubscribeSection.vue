@@ -22,7 +22,7 @@
             type="email"
           />
           <button
-            class="bg-primary text-white font-bold rounded-full py-4 md:px-16 px-8"
+            class="bg-primary text-white font-bold rounded-full py-4 lg:px-16 px-8"
           >
             Subscribe
           </button>

@@ -91,7 +91,7 @@ export default {
       class="container flex flex-col md:mt-10 mt-16 items-center justify-center px-4"
     >
       <div>
-        <p class="text-header">What we do</p>
+        <p class="text-secondary-300 text-[2rem] font-semibold">What we do</p>
       </div>
 
       <!-- Immigration Services -->
@@ -103,7 +103,7 @@ export default {
           </ServiceCard>
         </div>
         <div class="flex flex-col items-center gap-4 mt-6 text-center">
-          <p class="text-2xl font-semibold text-secondary-200">
+          <p class="text-[1.5rem] font-semibold text-secondary-300">
             High-class specialists are ready to help you at any time!
           </p>
           <p class="text-base text-secondary-200">
@@ -112,7 +112,7 @@ export default {
           </p>
           <a
             href="#supportSection"
-            class="bg-sky-400 hover:bg-sky-500 text-white px-10 py-6 rounded-full text-sm mt-8 font-bold w-full md:w-2/5"
+            class="bg-sky-400 hover:bg-sky-500 text-white px-10 py-6 rounded-full text-sm mt-8 tracking-widest font-semibold w-full md:w-2/5"
           >
             <button>Free Consultation</button></a
           >

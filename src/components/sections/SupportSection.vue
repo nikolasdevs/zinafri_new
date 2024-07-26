@@ -53,7 +53,7 @@ const isFormValid = computed(() => {
 
 <template>
   <div
-    class="supportForm md:mt-24 mt-16 flex relative z-20 bg-hero-section bg-cover bg-center bg-fixed px-4"
+    class="supportForm md:mt-24 mt-16 flex relative z-20 bg-consult-section bg-cover bg-center bg-fixed px-4"
     id="supportSection"
   >
     <div
@@ -68,15 +68,15 @@ const isFormValid = computed(() => {
       class="container mx-auto flex flex-col md:flex-row w-full items-center justify-between gap-16 my-32 z-50"
     >
       <div
-        class="left-container flex flex-col gap-4 md:w-1/2 w-full justify-center text-white"
+        class="left-container flex flex-col gap-8 md:w-1/2 w-full justify-center text-white"
       >
-        <p class="font-semibold">FREE 24/7 SUPPORT</p>
-        <p class="text-5xl font-medium my-5">
-          Get Free & Quality Online Consultation
-        </p>
-        <p class="font-semibold">
-          Make your next visit to Nigeria a seamless one.
-        </p>
+        <p class="font-semibold text-sky-500">FREE 24/7 SUPPORT</p>
+        <div class="flex flex-col ">
+          <p class="text-5xl font-medium my-5">
+            Get Free & Quality Online Consultation
+          </p>
+          <p class="">Make your next visit to Nigeria a seamless one.</p>
+        </div>
         <p>
           Planning a trip to Nigeria involves various steps, and obtaining the
           right visa is a crucial part of the process. Fortunately, Zinafri has
@@ -91,26 +91,29 @@ const isFormValid = computed(() => {
 
         <form class="flex flex-col gap-4" @submit.prevent="onCreateForm">
           <input
-            class="input"
+            class="py-3 px-4 rounded-md outline-none"
             type="text"
             placeholder="Enter Your Name"
             v-model="name"
           />
           <input
-            class="input"
+            class="py-3 px-4 rounded-md outline-none"
             type="email"
             placeholder="Enter Your Email Address"
             v-model="email"
           />
 
           <input
-            class="input"
+            class="py-3 px-4 rounded-md outline-none"
             type="number"
             placeholder="Enter Your Phone Number"
             v-model="phone"
           />
 
-          <select v-model="selectedCountry" class="input">
+          <select
+            v-model="selectedCountry"
+            class="py-3 px-4 rounded-md outline-none"
+          >
             <option disabled>Select a country</option>
             <option
               v-for="country in countries"
@@ -121,7 +124,10 @@ const isFormValid = computed(() => {
             </option>
           </select>
 
-          <select class="input" v-model="department">
+          <select
+            class="py-3 px-4 rounded-md outline-none"
+            v-model="department"
+          >
             <option>Visa For</option>
             <option>Tourist Visa</option>
 

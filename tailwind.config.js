@@ -14,14 +14,20 @@ export default {
           to: { transform: "translateX(-100%)" },
         },
       },
+      fontFamily: {
+        sans: ["Instrument-sans", "sans-serif"],
+      },
       backgroundImage: {
-        "hero-section": " url('/src/assets/images/hero-1.jpg')",
+        "hero-section":
+          " url('/src/assets/images/gratisography-black-white-escalators-free-stock-photo.jpg')",
+        "consult-section": " url('/src/assets/images/hero-1.jpg')",
       },
       colors: {
         primary: "rgb(11,165,233)",
         secondary: {
           100: "#F1F5F9",
-          200: "#4B5563",
+          200: "#5c5c5c",
+          300: "#333333",
         },
       },
     },
