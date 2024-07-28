@@ -2,7 +2,7 @@
   <div class="bg-gray-100 cursor-grab shadow-md p-4 w-80 mb-8">
     <div>
       <div class="flex items-center gap-4 mb-4">
-        <img :src="cardImage" alt="Profile Image" class="card-img" />
+        <!-- <img :src="cardImage" alt="Profile Image" class="card-img" /> -->
         <div class="flex flex-col">
           <h2 class="text-lg font-semibold text-primary">{{ name }}</h2>
           <p class="text-sm text-gray-400">{{ request }}</p>

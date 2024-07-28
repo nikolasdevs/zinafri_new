@@ -12,7 +12,7 @@
     </div>
     <p class="text-secondary-200 px-4">{{ blogContent }}</p>
     <p class="px-4 mb-4">
-      by <span class="font-bold">{{ blogAuthor }}</span> - {{ blogDate }}
+      by <span class="font-bold text-secondary-300">{{ blogAuthor }}</span> - {{ blogDate }}
     </p>
   </div>
 </template>
@@ -24,6 +24,7 @@ export default {
   props: {
     blogCardImage: {
       type: String,
+      
       required: true,
     },
     blogCategory: {
