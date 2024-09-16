@@ -6,7 +6,6 @@ import FeedbackSection from "../../components/sections/FeedbackSection.vue";
 import SubscribeSection from "../../components/sections/SubscribeSection.vue";
 import BlogSection from "../../components/sections/BlogSection.vue";
 import SupportSection from "../../components/sections/SupportSection.vue";
-import TheFooter from "../../components/sections/FooterSection.vue";
 </script>
 
 <template>
@@ -17,5 +16,4 @@ import TheFooter from "../../components/sections/FooterSection.vue";
   <SupportSection />
   <BlogSection />
   <SubscribeSection />
-  <TheFooter />
 </template>

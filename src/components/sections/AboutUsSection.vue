@@ -3,15 +3,19 @@
     class="about-us container flex flex-col md:flex-row items-center justify-between mx-auto md:mt-24 mt-16 w-full md:gap-24 gap-8 px-4"
   >
     <div class="md:w-4/5">
-      <img src="/src/assets/images/christina.jpg" alt="" class="rounded-lg" />
+      <img
+        src="/src/assets/images/consultant-img.jpg"
+        alt=""
+        class="rounded-lg"
+      />
     </div>
 
-    <div class="flex flex-col gap-2 md:w-2/4 w-full md:text-start">
+    <div class="flex flex-col gap-2 md:w-2/4 w-full md:text-start text-secondary-200">
       <p class="text-3xl text-sky-500 font-semibold md:text-header">
-        Immigration services from experienced lawyers
+        Immigration services from experienced consultants
       </p>
       <p class="text-lg text-sky-500 font-medium">
-        Trusted by 1224+ clients from 20 countries
+        Trusted by 124+ clients from 20 countries
       </p>
 
       <p class="mt-8 md:text-lg text-base">
@@ -93,11 +97,6 @@
           >Committed to Service Excellence
         </li>
       </ul>
-      <button
-        class="bg-sky-400 hover:bg-sky-500 text-white py-6 rounded-full text-sm mt-8 font-bold"
-      >
-        About us
-      </button>
     </div>
   </div>
 </template>
